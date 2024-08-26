@@ -1,0 +1,153 @@
+:root{
+    --BlueMob: #04477f;
+    --BlueSecondMob: #2b6391;
+    --BlueLight:#5a7d98;
+    --Yellow: #face16;
+    --gray:#a39e9ed8;
+    --blueDark: #282c34;
+    --celestial:#cdd8e1;
+}
+
+/* ********************  VAR   ************************* */
+
+.m-auto {margin: auto;}
+.m-0 {margin: 0;}
+.p-0 {padding: 0;}
+.w-98{width: 98%;}
+.w-97{width: 97%;}
+.w-95{width: 95%;}
+.w-90{width: 90%;}
+.w-85{width: 85%;}
+.w-80{width: 80%;}
+.w-75{width: 75%;}
+.w-70{width: 70%;}
+.w-65{width: 65%;}
+.w-60{width: 60%;}
+.w-55{width: 55%;}
+.w-45{width: 45%;}
+.w-40{width: 40%;}
+.w-35{width: 35%;}
+.w-30{width: 30%;}
+.w-25{width: 24%;}
+.w-20{width: 20%;}
+.w-15{width: 15%;}
+.w-10{width: 10%;}
+
+.box{box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);}
+
+.bg-blueDark{background: var(--blueDark);}
+.bg-BlueMob{background: var(--BlueMob);}
+.bg-BlueLight{background: var(--celestial);}
+
+.h-40{height: 40%;}
+.h-70{height: 70%;}
+.h-auto{height: auto;}
+
+.circle{
+    border-radius: 50%;
+    width: 7vw; 
+    height: 7vw;
+}
+
+
+/* ********************  DOM   ************************* */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #d8d8d8;
+}
+
+main{
+    width:100%;
+    height: 100vh;
+}
+
+/* ********************  NAV   ************************* */
+
+.navbar {
+    background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)) !important;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.2s ease-in-out; 
+}
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+    transform: translateY(0);
+}
+
+.navbar.absolute {
+    transform: translateY(-100%);
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.navbar-nav:hover .nav-link:hover {
+    font-weight: bold;
+    color: #c4c4c4;
+}
+
+
+
+/* ********************  ICONS   ************************* */
+.logo-nav{
+    height: 3rem;
+}
+
+.logo-container {
+    text-align: center;
+    color: white;
+}
+.btn-contactanos {
+    background-color: var(--BlueMob);
+    border-color: var(--BlueMob);
+}
+
+.btn-contactanos:hover {
+    background-color: var(--BlueSecondMob);
+    border-color: var(--BlueSecondMob);
+}
+
+.letters{
+    height: 2rem;
+    padding-left: .5em;
+}
+
+
+/* ********************  SCROLL   ************************* */
+
+.scroll-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(90, 92, 105, .5);
+    line-height: 46px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background: #5a5c69
+}
+
+
