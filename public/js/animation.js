@@ -7,17 +7,20 @@ AOS.init({
 
 const link = document.getElementById('navigate');
 const body = document.body;
+if(link){
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+    
+        body.classList.add('slide-out');
+    
+        setTimeout(function() {
+            window.location.href = link.href;
+        }, 700);
+    });
+    
+    window.addEventListener('load', function() {
+        body.classList.remove('slide-out');
+    });
+}
 
-link.addEventListener('click', function(event) {
-    event.preventDefault();
 
-    body.classList.add('slide-out');
-
-    setTimeout(function() {
-        window.location.href = link.href;
-    }, 700);
-});
-
-window.addEventListener('load', function() {
-    body.classList.remove('slide-out');
-});

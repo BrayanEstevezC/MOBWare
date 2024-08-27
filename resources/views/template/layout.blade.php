@@ -54,11 +54,13 @@
         </div>
     </nav>
 
-    <main>
+    <main class="">
         @yield('content')
     </main>
 
-    <footer></footer>
+    <footer class="">
+        <p>Hola</P>
+    </footer>
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
@@ -71,7 +73,7 @@
     <script src="js/layout.js"></script>
     <script src="js/animation.js"></script>
 
-    @yield('additional_js')
+    @yield('scripts')
 </body>
 
 </html>
